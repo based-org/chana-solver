@@ -1,0 +1,1 @@
+curl -X POST -F file="sneed.png" <your server>

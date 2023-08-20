@@ -1,0 +1,12 @@
+[Unit]
+Description=Chana Solver Service
+After=network.target
+
+[Service]
+User=sneed
+Group=sneed
+WorkingDirectory=/home/sneed/solver
+ExecStart=/home/sneed/solver/venv/bin/gunicorn --workers 2 --timeout 30 --log-level info server:app
+
+[Install]
+WantedBy=multi-user.target
