@@ -8,5 +8,5 @@ You can easily host it now with the Dockerfile or just use systemd file after in
 
 ### Example usage
 ```
-curl -X POST -F file="sneed.png" ${SERVER_IP}
+curl -X POST -F file="sneed.png" ${SERVER_IP}/solve
 ```
